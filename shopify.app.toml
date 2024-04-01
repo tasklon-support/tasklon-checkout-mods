@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "8155be5367775ab33faac2533b10c4bb"
+name = "Tasklon - Checkout Mods"
+handle = "tasklon-checkout-mods"
+application_url = "https://interested-pools-glucose-therefore.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kgkg-tasklon.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://interested-pools-glucose-therefore.trycloudflare.com/auth/callback",
+  "https://interested-pools-glucose-therefore.trycloudflare.com/auth/shopify/callback",
+  "https://interested-pools-glucose-therefore.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
